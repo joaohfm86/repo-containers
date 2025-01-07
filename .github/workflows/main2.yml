@@ -8,7 +8,7 @@ jobs:
             - name: Execução do Runner
               run: cat /etc/os-release
             - name: Execução no container
-              uses: docker://alpine.latest
+              uses: docker://alpine:latest
               with:
                 entrypoint: cat
                 args: /etc/os-release
